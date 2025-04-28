@@ -65,151 +65,31 @@
     </div>
     <!-- /preload -->
     <div id="wrapper">
-      <!-- topbar -->
-      <div class="tf-topbar">
-        <div class="container-full">
-          <div class="row">
-            <div class="col-xl-4">
-              <div class="topbar-left d-none d-xl-flex">
-                <div class="tf-languages">
-                  <select
-                    class="image-select center style-default color-white type-languages"
-                  >
-                    <option>English</option>
-                    <option>Vietnam</option>
-                  </select>
-                </div>
-                <div class="tf-currencies">
-                  <select
-                    class="image-select center style-default color-white type-currencies"
-                  >
-                    <option selected data-thumbnail="images/country/us.svg">
-                      USD
-                    </option>
-                    <option data-thumbnail="images/country/vn.svg">VND</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="wrapper-slider-topbar">
-                <div
-                  class="swiper tf-sw-top_bar"
-                  data-preview="1"
-                  data-space="0"
-                  data-loop="true"
-                  data-speed="2000"
-                  data-auto-play="true"
-                  data-delay="2000"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <p class="text-caption-1 text_white">
-                        Free shipping on all orders over
-                        <span class="text_primary">$20.00</span>
-                      </p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="text-caption-1 text_white">
-                        Free shipping on all orders over
-                        <span class="text_primary">$20.00</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="navigation-topbar nav-next-topbar">
-                  <span class="icon icon-left"></span>
-                </div>
-                <div class="navigation-topbar nav-prev-topbar">
-                  <span class="icon icon-right"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="topbar-right justify-content-end d-none d-xl-flex">
-                <a href="about.html" class="text_white text-caption-1 link"
-                  >About</a
-                >
-                <a href="contact.html" class="text_white text-caption-1 link"
-                  >Contact</a
-                >
-                <a href="store-list.html" class="text_white text-caption-1 link"
-                  >Location</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /topbar -->
-
-      <!-- .header -->
-      <header
-        id="header"
-        class="header-default header-absolute header-style-2 header-fixed"
-      >
-        <div class="main-header has-border-y">
+      <!-- Header -->
+      <header id="header" class="header-default" style="background-color:#0f0f2e8f
+;">
+        <div class="main-header">
           <div class="container-full">
             <div class="row wrapper-header align-items-center">
-              <div class="col-xl-3 col-2 d-xl-none">
-                <a
-                  href="#mobileMenu"
-                  class="mobile-menu"
-                  data-bs-toggle="offcanvas"
-                  aria-controls="mobileMenu"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#fff"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
               <div class="col-xl-5 d-none d-xl-block">
                 <nav class="box-navigation text-center">
                   <ul class="box-nav-ul justify-content-start">
-                    <li class="menu-item position-relative">
+                     <img src="images/icon/Location.png" style="height: 50px;" /> 
+<li class="nav-cart">
+  <a
+    href="#shoppingCart1"
+    data-bs-toggle="modal"
+    class="nav-icon-item text-white"
+  >
+  
+    <div class="delivery-info" style="font-size: 12px; color: #fff; margin-top: 5px;">
+      Delivery To<br>1234556
+    </div>
+  </a>
+</li>
+                     <li class="menu-item">
                       <a href="#" class="item-link text_white"
-                        >PAGES<i class="icon icon-down"></i
-                      ></a>
-                      <div class="sub-menu submenu-default">
-                        <ul class="menu-list">
-                          <li>
-                            <a href="about.html" class="menu-link-text"
-                              >About Us</a
-                            >
-                          </li>
-                          <li>
-                            <a href="faqs.html" class="menu-link-text">Faqs</a>
-                          </li>
-                          <li>
-                            <a href="store-list.html" class="menu-link-text"
-                              >Store List</a
-                            >
-                          </li>
-                          <li>
-                            <a href="term-of-use.html" class="menu-link-text"
-                              >Term Of Use</a
-                            >
-                          </li>
-                          <li>
-                            <a href="contact.html" class="menu-link-text"
-                              >Contact Us</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li class="menu-item">
-                      <a href="#" class="item-link text_white"
-                        >BUY<i class="icon icon-down"></i
+                        > <img src="images/icon/buy.png"  style="height: 30px;"/> Buy<i class="icon icon-down"></i
                       ></a>
                       <div class="sub-menu mega-menu mega-menu-1">
                         <div class="container">
@@ -218,7 +98,7 @@
                               <div class="mega-menu-item">
                                 <div class="list-categories-inner">
                                   <div class="menu-heading text-title">
-                                    <h3>Buy Furniture</h3>
+                                    <h4>Buy Furniture</h4>
                                     <p style="font-size: 17px">
                                       Own Brand New or Refurbished furniture for
                                       your homes
@@ -243,96 +123,61 @@
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/1708662240.jpg"
+                                    style="height: 60px"
                                   />
                                   <p>Bedroom</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/7009502430-1.jpg"
+                                    style="height: 60px"
                                   />
                                   <p>Living Room</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/dining_icon.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Dining</p>
                                 </div>
                               </div>
 
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/Mattress.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Bedroom</p>
+                                  <p>Mattress</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/storage_icon.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Storage</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/table_icon.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Table</p>
                                 </div>
                               </div>
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/study_icon.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Bedroom</p>
+                                  <p>Study</p>
                                 </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
+                   
                               </div>
-                              <div class="mega-menu-item">
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Bedroom</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
-                              </div>
+          
                               <div class="mega-menu-item">
                                 <div class="collection-position style-2">
                                   <div class="img-style">
@@ -368,7 +213,7 @@
                     </li>
                     <li class="menu-item">
                       <a href="#" class="item-link text_white"
-                        >RENT<i class="icon icon-down"></i
+                        ><img src="images/icon/rent.png"  style="height: 30px;"/> RENT<i class="icon icon-down"></i
                       ></a>
                       <div class="sub-menu mega-menu mega-menu-1">
                         <div class="container">
@@ -377,7 +222,7 @@
                               <div class="mega-menu-item">
                                 <div class="list-categories-inner">
                                   <div class="menu-heading text-title">
-                                    <h3>RENT Furniture</h3>
+                                    <h4>RENT Furniture</h4>
                                     <p style="font-size: 17px">
                                       Own Brand New or Refurbished furniture for
                                       your homes
@@ -402,95 +247,75 @@
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/Bedroom.avif"
+                                    style="height: 60px"
                                   />
                                   <p>Bedroom</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/Living Room.avif"
+                                    style="height: 60px"
                                   />
                                   <p>Living Room</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/Kids room.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Kids Room</p>
                                 </div>
                               </div>
 
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/Storage.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Bedroom</p>
+                                  <p>Storage</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/Study.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Study</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    src="images/icon/Fitness.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Living Room</p>
+                                  <p>Fitness</p>
                                 </div>
                               </div>
                               <div class="mega-menu-item">
                                 <div class="menu-heading text-title">
                                   <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
+                                    src="images/icon/Appliances.avif"
+                                    style="height: 60px"
                                   />
-                                  <p>Bedroom</p>
+                                  <p>Appliance</p>
+                                </div>
+                                <div class="menu-heading text-title">
+                                  <img
+                                    src="images/icon/Mattress.avif"
+                                    style="height: 60px"
+                                  />
+                                  <p>Mattress</p>
                                 </div>
                                 <div class="menu-heading text-title">
                                   <img
                                     src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
+                                    style="height: 60px"
                                   />
                                   <p>Living Room</p>
                                 </div>
                               </div>
                               <div class="mega-menu-item">
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/1708662240.avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Bedroom</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
-                                <div class="menu-heading text-title">
-                                  <img
-                                    src="images/payment/7009502430 (1).avif"
-                                    style="height: 100px"
-                                  />
-                                  <p>Living Room</p>
-                                </div>
+                          
                               </div>
                               <div class="mega-menu-item">
                                 <div class="collection-position style-2">
@@ -528,43 +353,49 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-xl-2 col-8 d-flex justify-content-center">
+              <div class="col-md-4 col-2 d-xl-none">
                 <a
-                  href="index.html"
-                  class="logo-header d-flex"
-                  style="color: aliceblue; font-size: 32px; font-style: italic"
+                  href="#mobileMenu"
+                  class="mobile-menu"
+                  data-bs-toggle="offcanvas"
+                  aria-controls="mobileMenu"
                 >
-                 <img
-                    src="images/logo/logo.png"
-                    alt="logo"
-                    class="logo" style="height: 80px;"
-                  /> 
-                  <img
-                    src="images/logo/logo.png"
-                    alt="logo"
-                    class="logo-black"
-                  />
-              
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#ffffff"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
                 </a>
               </div>
-              <div class="col-xl-5 col-2">
+              <div class="col-xl-2 col-md-4 col-8 text-center">
+                <a href="index.html" class="logo-header">
+                  <img src="images/logo/logo.png" alt="logo" class="logo" style="height: 80px;" />
+                </a>
+              </div>
+              <div class="col-xl-5 col-md-4 col-2">
                 <ul class="nav-icon">
                   <li class="nav-search">
                     <a
                       href="#search"
                       data-bs-toggle="modal"
-                      class="nav-icon-item text_white"
-                    >
-                      <span class="icon icon-search"></span>
+                      class="nav-icon-item text-white"
+                    ><input class="form-control" placeholder="What are you searching for" style="padding: 10px;border-radius: 10px;" />
+                      
                     </a>
                   </li>
-                  <li class="nav-account">
-                    <a href="login.html" class="nav-icon-item text_white">
+                  <li class="nav-account text-white">
+                    <a href="login.html" class="nav-icon-item text-white">
                       <span class="icon icon-user"></span>
                     </a>
                   </li>
-                  <li class="nav-wishlist">
-                    <a href="wish-list.html" class="nav-icon-item text_white">
+                  <li class="nav-wishlist ">
+                    <a href="wish-list.html" class="nav-icon-item text-white">
                       <span class="icon icon-heart"></span>
                     </a>
                   </li>
@@ -572,7 +403,7 @@
                     <a
                       href="#shoppingCart"
                       data-bs-toggle="modal"
-                      class="nav-icon-item text_white"
+                      class="nav-icon-item text-white"
                     >
                       <span class="icon icon-cart"></span>
                       <span class="count-box text-button-small">1</span></a
@@ -584,7 +415,7 @@
           </div>
         </div>
       </header>
-      <!-- /.header -->
+      <!-- /Header -->
 
       <!-- .page-title -->
       <div class="page-title relative">
@@ -658,8 +489,16 @@
       </section>
       <!-- /Section Order -->
 
+
       <!-- .footer -->
-      <footer id="footer" class="footer">
+
+      <footer id="footer" class="footer" style="background: linear-gradient(360deg, #F2FAFB 0%, rgba(255, 255, 255, 0) 102.67%);
+    margin-top: 40px;
+    font-family: Work Sans !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 24px;">
+
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -669,33 +508,22 @@
                     <div class="footer-menu">
                       <div class="footer-col-block">
                         <h5
-                          class="footer-heading text_white footer-heading-mobile"
+                          class="footer-heading  footer-heading-mobile"
                         >
                           Infomation
                         </h5>
                         <div class="tf-collapse-content">
                           <ul class="footer-menu-list">
                             <li class="text-body-default">
-                              <a href="about.html" class="link footer-menu_item"
+                              <a href="about.html" class="link footer-menu_item" style="color: #191616;"
                                 >About Us</a
                               >
                             </li>
-                            <li class="text-body-default">
-                              <a
-                                href="store-list.html"
-                                class="link footer-menu_item"
-                                >Our Stories</a
-                              >
-                            </li>
-                            <li class="text-body-default">
-                              <a href="#" class="link footer-menu_item"
-                                >Size Guide</a
-                              >
-                            </li>
+             
                             <li class="text-body-default">
                               <a
                                 href="contact.html"
-                                class="link footer-menu_item"
+                                class="link footer-menu_item" style="color: #191616;"
                                 >Contact us</a
                               >
                             </li>
@@ -704,31 +532,22 @@
                       </div>
                       <div class="footer-col-block">
                         <h5
-                          class="footer-heading text_white footer-heading-mobile"
+                          class="footer-heading  footer-heading-mobile"
                         >
                           Customer Services
                         </h5>
                         <div class="tf-collapse-content">
                           <ul class="footer-menu-list">
+                      
                             <li class="text-body-default">
-                              <a href="#" class="link footer-menu_item"
-                                >Shipping</a
-                              >
-                            </li>
-                            <li class="text-body-default">
-                              <a href="#" class="link footer-menu_item"
-                                >Return &amp; Refund</a
-                              >
-                            </li>
-                            <li class="text-body-default">
-                              <a href="#" class="link footer-menu_item"
+                              <a href="#" class="link footer-menu_item"style="color: #191616;"
                                 >Privacy Policy</a
                               >
                             </li>
                             <li class="text-body-default">
                               <a
                                 href="term-of-use.html"
-                                class="link footer-menu_item"
+                                class="link footer-menu_item" style="color: #191616;"
                                 >Terms &amp; Conditions</a
                               >
                             </li>
@@ -736,102 +555,95 @@
                         </div>
                       </div>
                     </div>
-                    <div class="footer-phone-number">
+                    <!-- <div class="footer-phone-number">
                       <h4 class="text_white number">+61 (9) 567 8765 43</h4>
                       <h4 class="text_white mail">hello@yourname.com</h4>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
-                <div class="footer-col-block footer-newsletter">
-                  <h3 class="footer-heading footer-heading-mobile text_white">
-                    Stay in the loop with Weekly newsletters
-                  </h3>
-                  <div class="tf-collapse-content">
-                    <form
-                      id="subscribe-form"
-                      action="#"
-                      class="form-newsletter subscribe-form"
-                      method="post"
-                      accept-charset="utf-8"
-                      data-mailchimp="true"
-                    >
-                      <div id="subscribe-content" class="subscribe-content">
-                        <fieldset class="email">
-                          <input
-                            id="subscribe-email"
-                            type="email"
-                            name="email-form"
-                            class="subscribe-email"
-                            placeholder="Enter your e-mail"
-                            tabindex="0"
-                            aria-required="true"
-                          />
-                        </fieldset>
-                        <div class="button-submit">
-                          <button
-                            id="subscribe-button"
-                            class="subscribe-button text-body-default"
-                            type="button"
-                          >
-                            Subscribe<i class="icon-arrow-up-right"></i>
-                          </button>
+                 <div class="footer-left">
+                  <div class="footer-infor flex-grow-1">
+                    <div class="footer-menu">
+                      <div class="footer-col-block">
+                        <h5
+                          class="footer-heading  footer-heading-mobile"style="color: #191616;"
+                        >
+                          Infomation
+                        </h5>
+                        <div class="tf-collapse-content">
+                          <ul class="footer-menu-list">
+                            <li class="text-body-default">
+                              <a href="about.html" class="link footer-menu_item"style="color: #191616;"
+                                >About Us</a
+                              >
+                            </li>
+             
+                            <li class="text-body-default">
+                              <a
+                                href="contact.html"
+                                class="link footer-menu_item"style="color: #191616;"
+                                >Contact us</a
+                              >
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <div id="subscribe-msg" class="subscribe-msg"></div>
-                    </form>
-                    <ul class="tf-social-icon type-2">
-                      <li>
-                        <a href="#" class="social-facebook"
-                          ><i class="icon icon-facebook"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#" class="social-twiter"
-                          ><i class="icon icon-x"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#" class="social-instagram"
-                          ><i class="icon icon-instagram"></i
-                        ></a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="social-amazon"
-                          ><i class="icon icon-telegram"></i
-                        ></a>
-                      </li>
-                    </ul>
+                      <div class="footer-col-block">
+                        <h5
+                          class="footer-heading  footer-heading-mobile" style="color: #191616;"
+                        >
+                          Customer Services
+                        </h5>
+                        <div class="tf-collapse-content">
+                          <ul class="footer-menu-list">
+                      
+                            <li class="text-body-default">
+                              <a href="#" class="link footer-menu_item"style="color: #191616;"
+                                >Privacy Policy</a
+                              >
+                            </li>
+                            <li class="text-body-default">
+                              <a
+                                href="term-of-use.html"
+                                class="link footer-menu_item"style="color: #191616;"
+                                >Terms &amp; Conditions</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="footer-phone-number">
+                      <h4 class="text_white number">+61 (9) 567 8765 43</h4>
+                      <h4 class="text_white mail">hello@yourname.com</h4>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </div>
+            <!-- <div class="col-12">
+              <p style="color: #191616;">
+Made a decision to buy furniture online? At Renatal Guru, we’ve always worked around the goal of making buying furniture easy. Now, we’re working on making it easier. 
+              </p>
+            </div>
+                  <div class="col-12">
+              <p style="color: #191616;">
+Made a decision to buy furniture online? At Renatal Guru, we’ve always worked around the goal of making buying furniture easy. Now, we’re working on making it easier. 
+              </p>
+            </div> -->
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" style=" background: linear-gradient(360deg, #F2FAFB 0%, rgba(255, 255, 255, 0) 102.67%);">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <div class="footer-bottom-wrap">
                   <div class="left">
-                    <p class="text-body-default text_white">
-                      Copyright ©2025 GearO. All Rights Reserved.
+                    <p class="text-body-default ">
+                      Copyright ©2025 Rental Guru. All Rights Reserved.
                     </p>
                   </div>
-                  <div class="center">
-                    <div class="tf-currencies">
-                      <select
-                        class="image-select center style-default style-box type-currencies"
-                      >
-                        <option selected data-thumbnail="images/country/us.svg">
-                          English (USD)
-                        </option>
-                        <option data-thumbnail="images/country/vn.svg">
-                          Vietnam (VND)
-                        </option>
-                      </select>
-                    </div>
-                  </div>
+                
                   <div class="tf-payment">
                     <ul>
                       <li>
