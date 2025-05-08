@@ -24,6 +24,85 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+    <style>
+      .list-btn-main.d-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-buy-product,
+.btn-rent-product {
+  flex: 1; /* Equal width for both buttons */
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy-product {
+  background-color: #28a745; /* Green for Buy */
+  color: white;
+}
+
+.btn-rent-product {
+  background-color: #007bff; /* Blue for Rent */
+  color: white;
+}
+
+.btn-buy-product:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.btn-rent-product:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+    /* CSS for the slider */
+    .slider {
+      width: 100%;
+      max-width: 1700px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Navigation buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
   </head>
 
   <body class="preload-wrapper">
@@ -67,7 +146,7 @@
     <div id="wrapper">
 
 
-  <!-- Header -->
+     <!-- Header -->
       <header id="header" class="header-default" style="background-color:#0f0f2e8f
 ">
         <div class="main-header">
@@ -373,500 +452,1559 @@
 
 
 
-      <!-- Section checkout -->
-      <section>
-        <div class="container">
+    <!-- .categories -->
+      <section class="flat-spacing-2">
+        <div class="container-full">
+            <h4 class="text-center">RENT FURNITURE</h4>
           <div class="row">
-            <div class="col-xl-6">
-              <div class="flat-spacing tf-page-checkout">
-                <div class="wrap">
-                  <div class="title-login">
-                    <p>Already have an account?</p>
-                    <a href="login.html" class="text-button link">Login Here</a>
-                  </div>
-                  <form class="login-box">
-                    <div class="grid-2">
-                      <input type="text" placeholder="Your name/Email" />
-                      <input type="password" placeholder="Password" />
+            <div class="col-12">
+              <div class="text-center flat-spacing pt-0 line-bottom-container">
+                <div class="wrap-cls-img">
+                  <div class="cls-img-item hover-img">
+                    <div class="image img-style">
+                      <img
+                        data-src="images/icon/dining_icon.avif"
+                        src="images/icon/dining_icon.avif"
+                        alt="Cls Image" style="width: 100px;"
+                      />
                     </div>
-                    <button class="tf-btn btn-onsurface" type="submit">
-                      Login<i class="icon-arrow-up-right"></i>
-                    </button>
-                  </form>
-                </div>
-                <div class="wrap">
-                  <h5 class="title">Information</h5>
-                  <form class="info-box">
-                    <div class="grid-2">
-                      <input type="text" placeholder="First Name*" />
-                      <input type="text" placeholder="Last Name*" />
-                    </div>
-                    <div class="grid-2">
-                      <input type="text" placeholder="Email Address*" />
-                      <input type="text" placeholder="Phone Number*" />
-                    </div>
-                    <div class="tf-select">
-                      <select
-                        class="text-title"
-                        name="address[country]"
-                        data-default=""
+                    <h6>
+                      <a class="link" href="shop-default.html"
+                        >Living Rooms</a
                       >
-                        <option
-                          selected
-                          value="Choose Country/Region"
-                          data-provinces="[]"
-                        >
-                          Choose Country/Region
-                        </option>
-                        <option
-                          value="United States"
-                          data-provinces="[['Alabama','Alabama'],['Alaska','Alaska'],['American Samoa','American Samoa'],['Arizona','Arizona'],['Arkansas','Arkansas'],['Armed Forces Americas','Armed Forces Americas'],['Armed Forces Europe','Armed Forces Europe'],['Armed Forces Pacific','Armed Forces Pacific'],['California','California'],['Colorado','Colorado'],['Connecticut','Connecticut'],['Delaware','Delaware'],['District of Columbia','Washington DC'],['Federated States of Micronesia','Micronesia'],['Florida','Florida'],['Georgia','Georgia'],['Guam','Guam'],['Hawaii','Hawaii'],['Idaho','Idaho'],['Illinois','Illinois'],['Indiana','Indiana'],['Iowa','Iowa'],['Kansas','Kansas'],['Kentucky','Kentucky'],['Louisiana','Louisiana'],['Maine','Maine'],['Marshall Islands','Marshall Islands'],['Maryland','Maryland'],['Massachusetts','Massachusetts'],['Michigan','Michigan'],['Minnesota','Minnesota'],['Mississippi','Mississippi'],['Missouri','Missouri'],['Montana','Montana'],['Nebraska','Nebraska'],['Nevada','Nevada'],['New Hampshire','New Hampshire'],['New Jersey','New Jersey'],['New Mexico','New Mexico'],['New York','New York'],['North Carolina','North Carolina'],['North Dakota','North Dakota'],['Northern Mariana Islands','Northern Mariana Islands'],['Ohio','Ohio'],['Oklahoma','Oklahoma'],['Oregon','Oregon'],['Palau','Palau'],['Pennsylvania','Pennsylvania'],['Puerto Rico','Puerto Rico'],['Rhode Island','Rhode Island'],['South Carolina','South Carolina'],['South Dakota','South Dakota'],['Tennessee','Tennessee'],['Texas','Texas'],['Utah','Utah'],['Vermont','Vermont'],['Virgin Islands','U.S. Virgin Islands'],['Virginia','Virginia'],['Washington','Washington'],['West Virginia','West Virginia'],['Wisconsin','Wisconsin'],['Wyoming','Wyoming']]"
-                        >
-                          United States
-                        </option>
-                        <option
-                          value="Australia"
-                          data-provinces="[['Australian Capital Territory','Australian Capital Territory'],['New South Wales','New South Wales'],['Northern Territory','Northern Territory'],['Queensland','Queensland'],['South Australia','South Australia'],['Tasmania','Tasmania'],['Victoria','Victoria'],['Western Australia','Western Australia']]"
-                        >
-                          Australia
-                        </option>
-                        <option value="Austria" data-provinces="[]">
-                          Austria
-                        </option>
-                        <option value="Belgium" data-provinces="[]">
-                          Belgium
-                        </option>
-                        <option
-                          value="Canada"
-                          data-provinces="[['Alberta','Alberta'],['British Columbia','British Columbia'],['Manitoba','Manitoba'],['New Brunswick','New Brunswick'],['Newfoundland and Labrador','Newfoundland and Labrador'],['Northwest Territories','Northwest Territories'],['Nova Scotia','Nova Scotia'],['Nunavut','Nunavut'],['Ontario','Ontario'],['Prince Edward Island','Prince Edward Island'],['Quebec','Quebec'],['Saskatchewan','Saskatchewan'],['Yukon','Yukon']]"
-                        >
-                          Canada
-                        </option>
-                        <option value="Czech Republic" data-provinces="[]">
-                          Czechia
-                        </option>
-                        <option value="Denmark" data-provinces="[]">
-                          Denmark
-                        </option>
-                        <option value="Finland" data-provinces="[]">
-                          Finland
-                        </option>
-                        <option value="France" data-provinces="[]">
-                          France
-                        </option>
-                        <option value="Germany" data-provinces="[]">
-                          Germany
-                        </option>
-                        <option
-                          value="Hong Kong"
-                          data-provinces="[['Hong Kong Island','Hong Kong Island'],['Kowloon','Kowloon'],['New Territories','New Territories']]"
-                        >
-                          Hong Kong SAR
-                        </option>
-                        <option
-                          value="Ireland"
-                          data-provinces="[['Carlow','Carlow'],['Cavan','Cavan'],['Clare','Clare'],['Cork','Cork'],['Donegal','Donegal'],['Dublin','Dublin'],['Galway','Galway'],['Kerry','Kerry'],['Kildare','Kildare'],['Kilkenny','Kilkenny'],['Laois','Laois'],['Leitrim','Leitrim'],['Limerick','Limerick'],['Longford','Longford'],['Louth','Louth'],['Mayo','Mayo'],['Meath','Meath'],['Monaghan','Monaghan'],['Offaly','Offaly'],['Roscommon','Roscommon'],['Sligo','Sligo'],['Tipperary','Tipperary'],['Waterford','Waterford'],['Westmeath','Westmeath'],['Wexford','Wexford'],['Wicklow','Wicklow']]"
-                        >
-                          Ireland
-                        </option>
-                        <option value="Israel" data-provinces="[]">
-                          Israel
-                        </option>
-                        <option
-                          value="Italy"
-                          data-provinces="[['Agrigento','Agrigento'],['Alessandria','Alessandria'],['Ancona','Ancona'],['Aosta','Aosta Valley'],['Arezzo','Arezzo'],['Ascoli Piceno','Ascoli Piceno'],['Asti','Asti'],['Avellino','Avellino'],['Bari','Bari'],['Barletta-Andria-Trani','Barletta-Andria-Trani'],['Belluno','Belluno'],['Benevento','Benevento'],['Bergamo','Bergamo'],['Biella','Biella'],['Bologna','Bologna'],['Bolzano','South Tyrol'],['Brescia','Brescia'],['Brindisi','Brindisi'],['Cagliari','Cagliari'],['Caltanissetta','Caltanissetta'],['Campobasso','Campobasso'],['Carbonia-Iglesias','Carbonia-Iglesias'],['Caserta','Caserta'],['Catania','Catania'],['Catanzaro','Catanzaro'],['Chieti','Chieti'],['Como','Como'],['Cosenza','Cosenza'],['Cremona','Cremona'],['Crotone','Crotone'],['Cuneo','Cuneo'],['Enna','Enna'],['Fermo','Fermo'],['Ferrara','Ferrara'],['Firenze','Florence'],['Foggia','Foggia'],['Forlì-Cesena','Forlì-Cesena'],['Frosinone','Frosinone'],['Genova','Genoa'],['Gorizia','Gorizia'],['Grosseto','Grosseto'],['Imperia','Imperia'],['Isernia','Isernia'],['L'Aquila','L’Aquila'],['La Spezia','La Spezia'],['Latina','Latina'],['Lecce','Lecce'],['Lecco','Lecco'],['Livorno','Livorno'],['Lodi','Lodi'],['Lucca','Lucca'],['Macerata','Macerata'],['Mantova','Mantua'],['Massa-Carrara','Massa and Carrara'],['Matera','Matera'],['Medio Campidano','Medio Campidano'],['Messina','Messina'],['Milano','Milan'],['Modena','Modena'],['Monza e Brianza','Monza and Brianza'],['Napoli','Naples'],['Novara','Novara'],['Nuoro','Nuoro'],['Ogliastra','Ogliastra'],['Olbia-Tempio','Olbia-Tempio'],['Oristano','Oristano'],['Padova','Padua'],['Palermo','Palermo'],['Parma','Parma'],['Pavia','Pavia'],['Perugia','Perugia'],['Pesaro e Urbino','Pesaro and Urbino'],['Pescara','Pescara'],['Piacenza','Piacenza'],['Pisa','Pisa'],['Pistoia','Pistoia'],['Pordenone','Pordenone'],['Potenza','Potenza'],['Prato','Prato'],['Ragusa','Ragusa'],['Ravenna','Ravenna'],['Reggio Calabria','Reggio Calabria'],['Reggio Emilia','Reggio Emilia'],['Rieti','Rieti'],['Rimini','Rimini'],['Roma','Rome'],['Rovigo','Rovigo'],['Salerno','Salerno'],['Sassari','Sassari'],['Savona','Savona'],['Siena','Siena'],['Siracusa','Syracuse'],['Sondrio','Sondrio'],['Taranto','Taranto'],['Teramo','Teramo'],['Terni','Terni'],['Torino','Turin'],['Trapani','Trapani'],['Trento','Trentino'],['Treviso','Treviso'],['Trieste','Trieste'],['Udine','Udine'],['Varese','Varese'],['Venezia','Venice'],['Verbano-Cusio-Ossola','Verbano-Cusio-Ossola'],['Vercelli','Vercelli'],['Verona','Verona'],['Vibo Valentia','Vibo Valentia'],['Vicenza','Vicenza'],['Viterbo','Viterbo']]"
-                        >
-                          Italy
-                        </option>
-                        <option
-                          value="Japan"
-                          data-provinces="[['Aichi','Aichi'],['Akita','Akita'],['Aomori','Aomori'],['Chiba','Chiba'],['Ehime','Ehime'],['Fukui','Fukui'],['Fukuoka','Fukuoka'],['Fukushima','Fukushima'],['Gifu','Gifu'],['Gunma','Gunma'],['Hiroshima','Hiroshima'],['Hokkaidō','Hokkaido'],['Hyōgo','Hyogo'],['Ibaraki','Ibaraki'],['Ishikawa','Ishikawa'],['Iwate','Iwate'],['Kagawa','Kagawa'],['Kagoshima','Kagoshima'],['Kanagawa','Kanagawa'],['Kumamoto','Kumamoto'],['Kyōto','Kyoto'],['Kōchi','Kochi'],['Mie','Mie'],['Miyagi','Miyagi'],['Miyazaki','Miyazaki'],['Nagano','Nagano'],['Nagasaki','Nagasaki'],['Nara','Nara'],['Niigata','Niigata'],['Okayama','Okayama'],['Okinawa','Okinawa'],['Saga','Saga'],['Saitama','Saitama'],['Shiga','Shiga'],['Shimane','Shimane'],['Shizuoka','Shizuoka'],['Tochigi','Tochigi'],['Tokushima','Tokushima'],['Tottori','Tottori'],['Toyama','Toyama'],['Tōkyō','Tokyo'],['Wakayama','Wakayama'],['Yamagata','Yamagata'],['Yamaguchi','Yamaguchi'],['Yamanashi','Yamanashi'],['Ōita','Oita'],['Ōsaka','Osaka']]"
-                        >
-                          Japan
-                        </option>
-                        <option
-                          value="Malaysia"
-                          data-provinces="[['Johor','Johor'],['Kedah','Kedah'],['Kelantan','Kelantan'],['Kuala Lumpur','Kuala Lumpur'],['Labuan','Labuan'],['Melaka','Malacca'],['Negeri Sembilan','Negeri Sembilan'],['Pahang','Pahang'],['Penang','Penang'],['Perak','Perak'],['Perlis','Perlis'],['Putrajaya','Putrajaya'],['Sabah','Sabah'],['Sarawak','Sarawak'],['Selangor','Selangor'],['Terengganu','Terengganu']]"
-                        >
-                          Malaysia
-                        </option>
-                        <option value="Netherlands" data-provinces="[]">
-                          Netherlands
-                        </option>
-                        <option
-                          value="New Zealand"
-                          data-provinces="[['Auckland','Auckland'],['Bay of Plenty','Bay of Plenty'],['Canterbury','Canterbury'],['Chatham Islands','Chatham Islands'],['Gisborne','Gisborne'],['Hawke's Bay','Hawke’s Bay'],['Manawatu-Wanganui','Manawatū-Whanganui'],['Marlborough','Marlborough'],['Nelson','Nelson'],['Northland','Northland'],['Otago','Otago'],['Southland','Southland'],['Taranaki','Taranaki'],['Tasman','Tasman'],['Waikato','Waikato'],['Wellington','Wellington'],['West Coast','West Coast']]"
-                        >
-                          New Zealand
-                        </option>
-                        <option value="Norway" data-provinces="[]">
-                          Norway
-                        </option>
-                        <option value="Poland" data-provinces="[]">
-                          Poland
-                        </option>
-                        <option
-                          value="Portugal"
-                          data-provinces="[['Aveiro','Aveiro'],['Açores','Azores'],['Beja','Beja'],['Braga','Braga'],['Bragança','Bragança'],['Castelo Branco','Castelo Branco'],['Coimbra','Coimbra'],['Faro','Faro'],['Guarda','Guarda'],['Leiria','Leiria'],['Lisboa','Lisbon'],['Madeira','Madeira'],['Portalegre','Portalegre'],['Porto','Porto'],['Santarém','Santarém'],['Setúbal','Setúbal'],['Viana do Castelo','Viana do Castelo'],['Vila Real','Vila Real'],['Viseu','Viseu'],['Évora','Évora']]"
-                        >
-                          Portugal
-                        </option>
-                        <option value="Singapore" data-provinces="[]">
-                          Singapore
-                        </option>
-                        <option
-                          value="South Korea"
-                          data-provinces="[['Busan','Busan'],['Chungbuk','North Chungcheong'],['Chungnam','South Chungcheong'],['Daegu','Daegu'],['Daejeon','Daejeon'],['Gangwon','Gangwon'],['Gwangju','Gwangju City'],['Gyeongbuk','North Gyeongsang'],['Gyeonggi','Gyeonggi'],['Gyeongnam','South Gyeongsang'],['Incheon','Incheon'],['Jeju','Jeju'],['Jeonbuk','North Jeolla'],['Jeonnam','South Jeolla'],['Sejong','Sejong'],['Seoul','Seoul'],['Ulsan','Ulsan']]"
-                        >
-                          South Korea
-                        </option>
-                        <option
-                          value="Spain"
-                          data-provinces="[['A Coruña','A Coruña'],['Albacete','Albacete'],['Alicante','Alicante'],['Almería','Almería'],['Asturias','Asturias Province'],['Badajoz','Badajoz'],['Balears','Balears Province'],['Barcelona','Barcelona'],['Burgos','Burgos'],['Cantabria','Cantabria Province'],['Castellón','Castellón'],['Ceuta','Ceuta'],['Ciudad Real','Ciudad Real'],['Cuenca','Cuenca'],['Cáceres','Cáceres'],['Cádiz','Cádiz'],['Córdoba','Córdoba'],['Girona','Girona'],['Granada','Granada'],['Guadalajara','Guadalajara'],['Guipúzcoa','Gipuzkoa'],['Huelva','Huelva'],['Huesca','Huesca'],['Jaén','Jaén'],['La Rioja','La Rioja Province'],['Las Palmas','Las Palmas'],['León','León'],['Lleida','Lleida'],['Lugo','Lugo'],['Madrid','Madrid Province'],['Melilla','Melilla'],['Murcia','Murcia'],['Málaga','Málaga'],['Navarra','Navarra'],['Ourense','Ourense'],['Palencia','Palencia'],['Pontevedra','Pontevedra'],['Salamanca','Salamanca'],['Santa Cruz de Tenerife','Santa Cruz de Tenerife'],['Segovia','Segovia'],['Sevilla','Seville'],['Soria','Soria'],['Tarragona','Tarragona'],['Teruel','Teruel'],['Toledo','Toledo'],['Valencia','Valencia'],['Valladolid','Valladolid'],['Vizcaya','Biscay'],['Zamora','Zamora'],['Zaragoza','Zaragoza'],['Álava','Álava'],['Ávila','Ávila']]"
-                        >
-                          Spain
-                        </option>
-                        <option value="Sweden" data-provinces="[]">
-                          Sweden
-                        </option>
-                        <option value="Switzerland" data-provinces="[]">
-                          Switzerland
-                        </option>
-                        <option
-                          value="United Arab Emirates"
-                          data-provinces="[['Abu Dhabi','Abu Dhabi'],['Ajman','Ajman'],['Dubai','Dubai'],['Fujairah','Fujairah'],['Ras al-Khaimah','Ras al-Khaimah'],['Sharjah','Sharjah'],['Umm al-Quwain','Umm al-Quwain']]"
-                        >
-                          United Arab Emirates
-                        </option>
-                        <option
-                          value="United Kingdom"
-                          data-provinces="[['British Forces','British Forces'],['England','England'],['Northern Ireland','Northern Ireland'],['Scotland','Scotland'],['Wales','Wales']]"
-                        >
-                          United Kingdom
-                        </option>
-                        <option value="Vietnam" data-provinces="[]">
-                          Vietnam
-                        </option>
-                      </select>
-                    </div>
-                    <div class="grid-2">
-                      <input type="text" placeholder="Town/City*" />
-                      <input type="text" placeholder="Street,..." />
-                    </div>
-                    <div class="grid-2">
-                      <div class="tf-select">
-                        <select class="text-title" data-default="">
-                          <option selected value="Choose State">
-                            Choose State
-                          </option>
-                          <option value="California">California</option>
-                          <option value="Alabama">Alabam</option>
-                          <option value="Alaska">Alaska</option>
-                          <option value="Arizona">Arizona</option>
-                          <option value="Arkansas">Arkansas</option>
-                          <option value="Florida">Florida</option>
-                          <option value="Georgia">Georgia</option>
-                          <option value="Hawaii">Hawaii</option>
-                          <option value="Washington">Washington</option>
-                          <option value="Texas">Texas</option>
-                          <option value="Iowa">Iowa</option>
-                          <option value="Nevada">Nevada</option>
-                          <option value="Illinois">Illinois</option>
-                        </select>
-                      </div>
-                      <input type="text" placeholder="Postal Code*" />
-                    </div>
-                    <textarea placeholder="Write note..."></textarea>
-                  </form>
-                </div>
-                <div class="wrap">
-                  <h5 class="title">Choose payment Option:</h5>
-                  <form class="form-payment">
-                    <div class="payment-box" id="payment-box">
-                      <div class="payment-item payment-choose-card active">
-                        <label
-                          for="credit-card-method"
-                          class="payment-header"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#credit-card-payment"
-                          aria-controls="credit-card-payment"
-                        >
-                          <input
-                            type="radio"
-                            name="payment-method"
-                            class="tf-check-rounded"
-                            id="credit-card-method"
-                            checked
-                          />
-                          <span class="text-title">Credit Card</span>
-                        </label>
-                        <div
-                          id="credit-card-payment"
-                          class="collapse show"
-                          data-bs-parent="#payment-box"
-                        >
-                          <div class="payment-body">
-                            <p class="text-secondary">
-                              Make your payment directly into our bank account.
-                              Your order will not be shipped until the funds
-                              have cleared in our account.
-                            </p>
-                            <div class="input-payment-box">
-                              <input type="text" placeholder="Name On Card*" />
-                              <div class="ip-card">
-                                <input
-                                  type="text"
-                                  placeholder="Card Numbers*"
-                                />
-                                <div class="list-card">
-                                  <img
-                                    src="images/payment/payment-7.png"
-                                    width="48"
-                                    height="16"
-                                    alt="card"
-                                  />
-                                  <img
-                                    src="images/payment/payment-8.png"
-                                    width="21"
-                                    height="16"
-                                    alt="card"
-                                  />
-                                  <img
-                                    src="images/payment/payment-9.png"
-                                    width="22"
-                                    height="16"
-                                    alt="card"
-                                  />
-                                  <img
-                                    src="images/payment/payment-10.png"
-                                    width="24"
-                                    height="16"
-                                    alt="card"
-                                  />
-                                </div>
-                              </div>
-                              <div class="grid-2">
-                                <input type="date" />
-                                <input type="text" placeholder="CVV*" />
-                              </div>
-                            </div>
-                            <div class="check-save">
-                              <input
-                                type="checkbox"
-                                class="tf-check"
-                                id="check-card"
-                                checked
-                              />
-                              <label for="check-card">Save Card Details</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="payment-item">
-                        <label
-                          for="delivery-method"
-                          class="payment-header collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#delivery-payment"
-                          aria-controls="delivery-payment"
-                        >
-                          <input
-                            type="radio"
-                            name="payment-method"
-                            class="tf-check-rounded"
-                            id="delivery-method"
-                          />
-                          <span class="text-title">Cash on delivery</span>
-                        </label>
-                        <div
-                          id="delivery-payment"
-                          class="collapse"
-                          data-bs-parent="#payment-box"
-                        ></div>
-                      </div>
-                      <div class="payment-item">
-                        <label
-                          for="apple-method"
-                          class="payment-header collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#apple-payment"
-                          aria-controls="apple-payment"
-                        >
-                          <input
-                            type="radio"
-                            name="payment-method"
-                            class="tf-check-rounded"
-                            id="apple-method"
-                          />
-                          <span class="text-title apple-pay-title">
-                            <img
-                              src="images/payment/applePay.png"
-                              alt="apple"
-                            />Apple Pay
-                          </span>
-                        </label>
-                        <div
-                          id="apple-payment"
-                          class="collapse"
-                          data-bs-parent="#payment-box"
-                        ></div>
-                      </div>
-                      <div class="payment-item paypal-item">
-                        <label
-                          for="paypal-method"
-                          class="payment-header collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#paypal-method-payment"
-                          aria-controls="paypal-method-payment"
-                        >
-                          <input
-                            type="radio"
-                            name="payment-method"
-                            class="tf-check-rounded"
-                            id="paypal-method"
-                          />
-                          <span class="paypal-title">
-                            <img src="images/payment/paypal.png" alt="apple" />
-                          </span>
-                        </label>
-                        <div
-                          id="paypal-method-payment"
-                          class="collapse"
-                          data-bs-parent="#payment-box"
-                        ></div>
-                      </div>
-                    </div>
-                    <button class="tf-btn btn-onsurface">
-                      Payment<i class="icon-arrow-up-right"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-1">
-              <div class="line-separation"></div>
-            </div>
-            <div class="col-xl-5">
-              <div class="flat-spacing flat-sidebar-checkout">
-                <div class="sidebar-checkout-content">
-                  <h5 class="title">Shopping Cart</h5>
-                  <div class="list-product">
-                    <div class="item-product">
-                      <a href="product-detail.html" class="img-product">
-                        <img
-                          src="images/shop/product-6.jpg"
-                          alt="img-product"
-                        />
-                      </a>
-                      <div class="content-box">
-                        <div class="info">
-                          <a
-                            href="product-detail.html"
-                            class="name-product link text-title"
-                            >Open Box - Adjustable...</a
-                          >
-                          <div class="variant text-caption-1">Gray, Size C</div>
-                        </div>
-                        <div class="total-price text-button">
-                          <span class="count">1</span>
-                          X<span class="price">₹60.00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-product">
-                      <a href="product-detail.html" class="img-product">
-                        <img
-                          src="images/shop/product-4.jpg"
-                          alt="img-product"
-                        />
-                      </a>
-                      <div class="content-box">
-                        <div class="info">
-                          <a
-                            href="product-detail.html"
-                            class="name-product link text-title"
-                            >Ergonomic Chair Pro</a
-                          >
-                          <div class="variant text-caption-1">Gray, Size C</div>
-                        </div>
-                        <div class="total-price text-button">
-                          <span class="count">1</span>
-                          X<span class="price">₹60.00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-product">
-                      <a href="product-detail.html" class="img-product">
-                        <img
-                          src="images/shop/product-1.jpg"
-                          alt="img-product"
-                        />
-                      </a>
-                      <div class="content-box">
-                        <div class="info">
-                          <a
-                            href="product-detail.html"
-                            class="name-product link text-title"
-                            >Double Standing Desk
-                          </a>
-                          <div class="variant text-caption-1">Gray, Size C</div>
-                        </div>
-                        <div class="total-price text-button">
-                          <span class="count">1</span>
-                          X<span class="price">₹60.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    </h6>
                   </div>
-                  <div class="sec-discount">
-                    <div class="ip-discount-code">
-                      <input type="text" placeholder="Add voucher discount" />
-                      <button class="tf-btn btn-onsurface">Apply Code</button>
+                  <div class="cls-img-item hover-img">
+                    <div class="image img-style">
+                      <img
+                        data-src="images/icon/dining_icon.avif"
+                        src="images/icon/dining_icon.avif"
+                        alt="Cls Image" style="width: 100px;"
+                      />
                     </div>
-                    <p class="text-body-default">
-                      Discount code is only used for orders with a total value
-                      of products over $500.00
-                    </p>
+                    <h6>
+                      <a class="link" href="shop-default.html">Bedroom</a>
+                    </h6>
                   </div>
-                  <div class="sec-total-price">
-                    <div class="top">
-                      <div
-                        class="item d-flex align-items-center justify-content-between text-button"
-                      >
-                        <span>Shipping</span>
-                        <span>Free</span>
-                      </div>
-                      <div
-                        class="item d-flex align-items-center justify-content-between text-button"
-                      >
-                        <span>Discounts</span>
-                        <span>-$80.00</span>
-                      </div>
+                  <div class="cls-img-item hover-img">
+                    <div class="image img-style">
+                      <img
+                        data-src="images/icon/chair_icon_v5.avif"
+                        src="images/icon/chair_icon_v5.avif"
+                        alt="Cls Image" style="width: 100px;"
+                      />
                     </div>
-                    <div class="bottom">
-                      <h5 class="d-flex justify-content-between">
-                        <span>Total</span>
-                        <span class="total-price-checkout">₹186,99</span>
-                      </h5>
+                    <h6>
+                      <a class="link" href="shop-default.html">Office Chairs</a>
+                    </h6>
+                  </div>
+                  <div class="cls-img-item hover-img">
+                    <div class="image img-style">
+                      <img
+                        data-src="images/icon/dining_icon.avif"
+                        src="images/icon/dining_icon.avif"
+                        alt="Cls Image" style="width: 100px;"
+                      />
                     </div>
+                    <h6>
+                      <a class="link" href="shop-default.html">Accessories</a>
+                    </h6>
+                  </div>
+                  <div class="cls-img-item hover-img">
+                    <div class="image img-style">
+                      <img
+                        data-src="images/icon/dining_icon.avif"
+                        src="images/icon/dining_icon.avif"
+                        alt="Cls Image" style="width: 100px;"
+                      />
+                    </div>
+                    <h6>
+                      <a class="link" href="shop-default.html">Decor Office</a>
+                    </h6>
                   </div>
                 </div>
+                <a href="shop-default.html" class="btn-line"
+                  ><span>View All Categiories</span></a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Section checkout -->
+      <!-- /.categories -->
+
+
+
+    <section class="flat-spacing-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+      <!-- /.categories -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/slider/slider4.webp" alt="First slide">
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+</section>    
+
+
+
+      
+
+
+        <!-- .top-sale -->
+      <section class="flat-spacing-5 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="heading-section style-2">
+                <div class="left">
+                  <h3 class="wow fadeInUp" style="font-family: Recline;">
+Deals of the day</h3>
+                  <p
+                    class="text-body-default text_secondary wow fadeInUp"
+                    data-wow-delay="0s"
+                  >
+                    To Rent
+                  </p>
+                </div>
+                <div class="right wow fadeInUp">
+                  <a href="shop-default.html" class="btn-line">
+                    <span>View All Products</span></a
+                  >
+                </div>
+              </div>
+              <div class="sw-button-over">
+                <div
+                  class="swiper tf-sw-collection"
+                  data-preview="4"
+                  data-tablet="3"
+                  data-mobile-sm="2"
+                  data-mobile="1"
+                  data-space-lg="30"
+                  data-space-md="20"
+                  data-space="15"
+                  data-loop="false"
+                >
+                  <div class="swiper-wrapper">
+
+<div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Buy Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+                  <div class="wrap-pagination d-lg-none d-block">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div
+                            class="sw-pagination-collection sw-dots type-circle d-flex justify-content-center"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="sw-button swiper-button-next nav-next-collection has-border d_lg_none"
+                ></div>
+                <div
+                  class="sw-button swiper-button-prev nav-prev-collection has-border d_lg_none"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- .top-sale -->
+       
+
+
+    <section class="flat-spacing-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+      <!-- /.categories -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner/banner12.avif" alt="First slide">
+    </div>
+
+  </div>
+
+</div>
+</div>
+            <div class="col-6">
+      <!-- /.categories -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner/banner23.avif" alt="First slide">
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+</section>   
+    <section class="flat-spacing-2">
+        <div class="container">
+            <h6 class="m-3">Why rent from Rental Guru Furniture?</h6>
+          <div class="row">
+            <div class="col-6">
+      <!-- /.categories -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner/why_rent_carousel3_may5.avif" alt="First slide">
+    </div>
+
+  </div>
+
+</div>
+</div>
+            <div class="col-6">
+      <!-- /.categories -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner/why_rent_carousel2_v2.avif" alt="First slide">
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+</section>   
+
+      <!-- .top-sale -->
+       <section class="flat-spacing-5 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="heading-section style-2">
+                <div class="left">
+                  <h3 class="wow fadeInUp" style="font-family: Recline;">
+Deals of the day</h3>
+                  <p
+                    class="text-body-default text_secondary wow fadeInUp"
+                    data-wow-delay="0s"
+                  >
+                    To Rent
+                  </p>
+                </div>
+                <div class="right wow fadeInUp">
+                  <a href="shop-default.html" class="btn-line">
+                    <span>View All Products</span></a
+                  >
+                </div>
+              </div>
+              <div class="sw-button-over">
+                <div
+                  class="swiper tf-sw-collection"
+                  data-preview="4"
+                  data-tablet="3"
+                  data-mobile-sm="2"
+                  data-mobile="1"
+                  data-space-lg="30"
+                  data-space-md="20"
+                  data-space="15"
+                  data-loop="false"
+                >
+                  <div class="swiper-wrapper">
+
+<div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Rent Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="card-product style-1 wow fadeInUp"
+                        data-wow-delay="0s"
+                      >
+                        <div class="card-product-wrapper">
+                          <a href="product-detail.html" class="image-wrap">
+                            <img
+                              class="lazyload img-product"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                            <img
+                              class="lazyload img-hover"
+                              data-src="images/shop/product-11.png"
+                              src="images/shop/product-11.png"
+                              alt="image-product"
+                            />
+                          </a>
+                          <div class="on-sale-wrap">
+                            <span class="on-sale-item">-25%</span>
+                          </div>
+                          <div class="list-product-btn">
+                            <a
+                              href="javascript:void(0);"
+                              class="box-icon wishlist btn-icon-action"
+                            >
+                              <span class="icon icon-heart"></span>
+                              <span class="tooltip">Wishlist</span>
+                            </a>
+                            <a
+                              href="#compare"
+                              data-bs-toggle="modal"
+                              aria-controls="compare"
+                              class="box-icon compare"
+                            >
+                              <span class="icon icon-compare"></span>
+                              <span class="tooltip">Compare</span>
+                            </a>
+                            <a
+                              href="#quickView"
+                              data-bs-toggle="modal"
+                              class="box-icon quickview tf-btn-loading"
+                            >
+                              <span class="icon icon-eye"></span>
+                              <span class="tooltip">Quick View</span>
+                            </a>
+                            
+                          </div>
+                               <p style="
+  margin: 0 4px 5px;
+  font-family: 'Recline';
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding-top: calc(25% - 24px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 68px;
+  line-height: 1.3;
+"
+>Double Standing Desk</p> 
+                             <p style="background-color:#f1f1f1;padding: 5px;width: 50%;border-radius: 0px 10px 0px 10px;">Buy Refurbished</p>
+                         
+                        </div>
+                       
+                        <div class="card-product-info" style="background-color:#ffdd4b;border-radius: 10px;padding: 25px;">
+                          <a
+                            href="product-detail.html"
+                            class="text-title title link"
+                            ></a
+                          
+                         
+                          >
+                          <div class="price text-body-default" style="font-size: 20px;font-weight: 600;">
+                            <span class="text-caption-1 " style="font-size: 30px;font-weight: 700;">
+-58 % </span
+                            > Off   &nbsp; 
+₹ 20089.99
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+                  <div class="wrap-pagination d-lg-none d-block">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div
+                            class="sw-pagination-collection sw-dots type-circle d-flex justify-content-center"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="sw-button swiper-button-next nav-next-collection has-border d_lg_none"
+                ></div>
+                <div
+                  class="sw-button swiper-button-prev nav-prev-collection has-border d_lg_none"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- .top-sale -->
+
+      <!-- .testimonials -->
+      <!-- <section class="flat-spacing-2 section-testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="heading-section text-center">
+                <h3 class="wow fadeInUp">Customer Review</h3>
+                <p
+                  class="text-body-default text_secondary wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  Our customers adore our products, and we constantly aim to
+                  delight them.
+                </p>
+              </div>
+              <div
+                class="swiper tf-sw-testimonial"
+                data-preview="3"
+                data-tablet="2"
+                data-mobile="1"
+                data-space-lg="30"
+                data-space-md="30"
+                data-space="15"
+                data-pagination="1"
+                data-pagination-md="1"
+                data-pagination-lg="1"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item hover-img style-2">
+                      <div class="content">
+                        <div class="content-top">
+                          <div
+                            class="box-author align-items-center d-flex gap-6"
+                          >
+                            <div class="text-title author">
+                              <a href="#" class="link">Sarah</a>
+                            </div>
+                            <svg
+                              class="icon"
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_15758_14563)">
+                                <path
+                                  d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M10 18.5005C14.1421 18.5005 17.5 15.1426 17.5 11.0005C17.5 6.85835 14.1421 3.50049 10 3.50049C5.85786 3.50049 2.5 6.85835 2.5 11.0005C2.5 15.1426 5.85786 18.5005 10 18.5005Z"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath>
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.684082)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <div class="text-caption-2 text_secondary">
+                              Verified purchase
+                            </div>
+                          </div>
+                          <div class="list-star-default">
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="text-secondary">
+                            "I recently purchased a sofa from this store, and it
+                            has completely transformed my living room. The
+                            quality is outstanding, and the design fits
+                            perfectly with my style. "
+                          </p>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-img avt-62 round">
+                            <img
+                              src="images/shop/testimonials-item-1.jpg"
+                              alt="avt"
+                            />
+                          </div>
+                          <div class="box-price">
+                            <p class="text-title text-line-clamp-1">
+                              <a href="product-detail.html" class="link"
+                                >Contrasting sheepskin...</a
+                              >
+                            </p>
+                            <div class="text-button price">₹
+60.00</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item hover-img style-2">
+                      <div class="content">
+                        <div class="content-top">
+                          <div
+                            class="box-author align-items-center d-flex gap-6"
+                          >
+                            <div class="text-title author">
+                              <a href="#" class="link">Michael</a>
+                            </div>
+                            <svg
+                              class="icon"
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_15758_14563)">
+                                <path
+                                  d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M10 18.5005C14.1421 18.5005 17.5 15.1426 17.5 11.0005C17.5 6.85835 14.1421 3.50049 10 3.50049C5.85786 3.50049 2.5 6.85835 2.5 11.0005C2.5 15.1426 5.85786 18.5005 10 18.5005Z"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath>
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.684082)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <div class="text-caption-2 text_secondary">
+                              Verified purchase
+                            </div>
+                          </div>
+                          <div class="list-star-default">
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="text-secondary">
+                            "I recently purchased a sofa from this store, and it
+                            has completely transformed my living room. The
+                            quality is outstanding, and the design fits
+                            perfectly with my style. "
+                          </p>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-img avt-62 round">
+                            <img
+                              src="images/shop/testimonials-item-2.jpg"
+                              alt="avt"
+                            />
+                          </div>
+                          <div class="box-price">
+                            <p class="text-title text-line-clamp-1">
+                              <a href="product-detail.html" class="link"
+                                >Contrasting sheepskin...</a
+                              >
+                            </p>
+                            <div class="text-button price">₹
+60.00</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item hover-img style-2">
+                      <div class="content">
+                        <div class="content-top">
+                          <div
+                            class="box-author align-items-center d-flex gap-6"
+                          >
+                            <div class="text-title author">
+                              <a href="#" class="link">Jennifer</a>
+                            </div>
+                            <svg
+                              class="icon"
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_15758_14563)">
+                                <path
+                                  d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M10 18.5005C14.1421 18.5005 17.5 15.1426 17.5 11.0005C17.5 6.85835 14.1421 3.50049 10 3.50049C5.85786 3.50049 2.5 6.85835 2.5 11.0005C2.5 15.1426 5.85786 18.5005 10 18.5005Z"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath>
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.684082)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <div class="text-caption-2 text_secondary">
+                              Verified purchase
+                            </div>
+                          </div>
+                          <div class="list-star-default">
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="text-secondary">
+                            "I recently purchased a sofa from this store, and it
+                            has completely transformed my living room. The
+                            quality is outstanding, and the design fits
+                            perfectly with my style. "
+                          </p>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-img avt-62 round">
+                            <img
+                              src="images/shop/testimonials-item-3.jpg"
+                              alt="avt"
+                            />
+                          </div>
+                          <div class="box-price">
+                            <p class="text-title text-line-clamp-1">
+                              <a href="product-detail.html" class="link"
+                                >Contrasting sheepskin...</a
+                              >
+                            </p>
+                            <div class="text-button price">₹
+60.00</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item hover-img style-2">
+                      <div class="content">
+                        <div class="content-top">
+                          <div
+                            class="box-author align-items-center d-flex gap-6"
+                          >
+                            <div class="text-title author">
+                              <a href="#" class="link">Sarah</a>
+                            </div>
+                            <svg
+                              class="icon"
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_15758_14563)">
+                                <path
+                                  d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M10 18.5005C14.1421 18.5005 17.5 15.1426 17.5 11.0005C17.5 6.85835 14.1421 3.50049 10 3.50049C5.85786 3.50049 2.5 6.85835 2.5 11.0005C2.5 15.1426 5.85786 18.5005 10 18.5005Z"
+                                  stroke="#3DAB25"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath>
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.684082)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <div class="text-caption-2 text_secondary">
+                              Verified purchase
+                            </div>
+                          </div>
+                          <div class="list-star-default">
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="text-secondary">
+                            "I recently purchased a sofa from this store, and it
+                            has completely transformed my living room. The
+                            quality is outstanding, and the design fits
+                            perfectly with my style. "
+                          </p>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-img avt-62 round">
+                            <img
+                              src="images/shop/testimonials-item-1.jpg"
+                              alt="avt"
+                            />
+                          </div>
+                          <div class="box-price">
+                            <p class="text-title text-line-clamp-1">
+                              <a href="product-detail.html" class="link"
+                                >Contrasting sheepskin...</a
+                              >
+                            </p>
+                            <div class="text-button price">₹
+60.00</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="sw-pagination-testimonial sw-dots type-circle d-flex justify-content-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- .testimonials -->
+
+
 
 
       <!-- .footer -->
-
-      <footer id="footer" class="footer" style="background: linear-gradient(360deg, #F2FAFB 0%, rgba(255, 255, 255, 0) 102.67%);
+<hr>
+      <footer id="footer" class="footer" style=" background: linear-gradient(360deg, #b6c6c9 0%, rgba(133, 97, 97, 0) 102.67%);
     margin-top: 40px;
     font-family: Work Sans !important;
     font-size: 14px;
     font-weight: 500;
-    padding-bottom: 24px;">
+    padding-bottom: 24px;
+">
 
         <div class="container">
           <div class="row">
@@ -884,7 +2022,7 @@
                         <div class="tf-collapse-content">
                           <ul class="footer-menu-list">
                             <li class="text-body-default">
-                              <a href="" class="link footer-menu_item" style="color: #191616;"
+                              <a href="" class="link footer-menu_item" style="color: #191616;font-weight: 650;"
                                 >Home</a
                               >
                             </li>
@@ -892,7 +2030,7 @@
                             <li class="text-body-default">
                               <a
                                 href=""
-                                class="link footer-menu_item" style="color: #191616;"
+                                class="link footer-menu_item" style="color: #191616;font-weight: 650;"
                                 >Buy furniture</a
                               >
                             </li>
@@ -1008,7 +2146,13 @@ Made a decision to buy furniture online? At Renatal Guru, we’ve always worked 
             </div> -->
           </div>
         </div>
-        <div class="footer-bottom" style=" background: linear-gradient(360deg, #F2FAFB 0%, rgba(255, 255, 255, 0) 102.67%);">
+        <div class="footer-bottom" style=" background: linear-gradient(360deg, #F2FAFB 0%, rgba(255, 255, 255, 0) 102.67%);
+    margin-top: 40px;
+    font-family: Work Sans !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 24px;
+">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -1108,6 +2252,7 @@ Made a decision to buy furniture online? At Renatal Guru, we’ve always worked 
       </div>
       <!-- /toolbar-bottom -->
     </div>
+
     <!-- mobile menu -->
     <div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
       <span
@@ -1652,7 +2797,9 @@ Made a decision to buy furniture online? At Renatal Guru, we’ve always worked 
                     >Open Box - Adjustable Laptop Stand</a
                   >
                   <div class="price text-body-default">
-                    <span class="text-caption-1 old-price">₹98.00</span>₹79.99
+                    <span class="text-caption-1 old-price">₹
+98.00</span>₹
+79.99
                   </div>
                   <ul class="list-color-product">
                     <li class="list-color-item color-swatch active">
@@ -2599,6 +3746,7 @@ Made a decision to buy furniture online? At Renatal Guru, we’ve always worked 
       </div>
     </div>
     <!-- /search -->
+
     <!-- shoppingCart -->
     <div class="modal fullRight fade modal-shopping-cart" id="shoppingCart">
       <div class="modal-dialog">
@@ -3398,6 +4546,7 @@ Made a decision to buy furniture online? At Renatal Guru, we’ve always worked 
       </div>
     </div>
     <!-- /shoppingCart -->
+         <!-- shoppingCart -->
     <div class="modal fullRight fade modal-shopping-cart" id="shoppingCart1">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -3934,7 +5083,16 @@ Currently selected pincode :122004
         </div>
       </div>
     </div>
-    <!-- quickView -->
+
+
+<script>
+function updateDeliveryInfo(select) {
+  const [city, zip] = select.value.split('|');
+  const deliveryInfo = document.querySelector('#delivery-info .delivery-output');
+  deliveryInfo.innerHTML = `Delivery To<br>${zip}`;
+}
+</script>
+    <!-- .quickView -->
     <div class="modal fullRight fade modal-quick-view" id="quickView">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -3953,7 +5111,7 @@ Currently selected pincode :122004
               </div>
               <div
                 class="quickView-item item-scroll-quickview"
-                data-scroll-quickview="beige"
+                data-scroll-quickview="gray"
               >
                 <img
                   class="lazyload"
@@ -3964,7 +5122,7 @@ Currently selected pincode :122004
               </div>
               <div
                 class="quickView-item item-scroll-quickview"
-                data-scroll-quickview="gray"
+                data-scroll-quickview="grey"
               >
                 <img
                   class="lazyload"
@@ -3973,10 +5131,7 @@ Currently selected pincode :122004
                   alt=""
                 />
               </div>
-              <div
-                class="quickView-item item-scroll-quickview"
-                data-scroll-quickview="grey"
-              >
+              <div class="quickView-item item-scroll-quickview">
                 <img
                   class="lazyload"
                   data-src="images/shop/quickview-slidebar-4.jpg"
@@ -3984,10 +5139,7 @@ Currently selected pincode :122004
                   alt=""
                 />
               </div>
-              <div
-                class="quickView-item item-scroll-quickview"
-                data-scroll-quickview="grey"
-              >
+              <div class="quickView-item item-scroll-quickview">
                 <img
                   class="lazyload"
                   data-src="images/shop/quickview-slidebar-5.jpg"
@@ -4042,8 +5194,10 @@ Currently selected pincode :122004
                 </div>
                 <div class="tf-product-info-desc">
                   <div class="tf-product-info-price">
-                    <h5 class="price-on-sale">₹79.99</h5>
-                    <div class="compare-at-price">₹98.99</div>
+                    <h5 class="price-on-sale">₹
+79.99</h5>
+                    <div class="compare-at-price">₹
+98.99</div>
                     <div class="badges-on-sale text-btn-uppercase">-25%</div>
                   </div>
                   <p>
@@ -4068,36 +5222,41 @@ Currently selected pincode :122004
                     >
                   </div>
                   <div class="variant-picker-values">
-                    <input id="values-beige2" type="radio" name="color2" />
+                    <input
+                      id="values-beige1"
+                      type="radio"
+                      name="color2"
+                      checked
+                    />
                     <label
                       class="hover-tooltip tooltip-bot radius-60 color-btn btn-scroll-quickview active"
                       data-slide="0"
                       data-price="79.99"
-                      for="values-beige2"
+                      for="values-beige1"
                       data-value="Beige"
                       data-scroll-quickview="beige"
                     >
                       <span class="btn-checkbox bg-color-beige1"></span>
                       <span class="tooltip">Beige</span>
                     </label>
-                    <input id="values-gray2" type="radio" name="color2" />
+                    <input id="values-gray1" type="radio" name="color2" />
                     <label
                       class="hover-tooltip tooltip-bot radius-60 color-btn btn-scroll-quickview"
                       data-slide="1"
                       data-price="79.99"
-                      for="values-gray2"
+                      for="values-gray1"
                       data-value="Gray"
                       data-scroll-quickview="gray"
                     >
                       <span class="btn-checkbox bg-color-gray"></span>
                       <span class="tooltip">Gray</span>
                     </label>
-                    <input id="values-grey2" type="radio" name="color2" />
+                    <input id="values-grey1" type="radio" name="color2" />
                     <label
                       class="hover-tooltip tooltip-bot radius-60 color-btn btn-scroll-quickview"
                       data-slide="2"
                       data-price="89.99"
-                      for="values-grey2"
+                      for="values-grey1"
                       data-value="Grey"
                       data-scroll-quickview="grey"
                     >
@@ -4114,7 +5273,7 @@ Currently selected pincode :122004
                       >
                     </div>
                     <a class="size-guide text-title link show-size-guide"
-                      >Find Your Size</a
+                      >Size Guide</a
                     >
                   </div>
                   <div class="variant-picker-values gap12">
@@ -4156,9 +5315,15 @@ Currently selected pincode :122004
                       class="tf-btn btn-onsurface flex-grow-1 show-shopping-cart"
                     >
                       <span>Add to cart -&nbsp;</span>
-                      <span class="tf-qty-price total-price">₹79.99</span>
+                      <span class="tf-qty-price total-price">₹
+79.99</span>
                     </a>
-                    <a class="box-icon hover-tooltip compare show-compare">
+                    <a
+                      href="#compare"
+                      data-bs-toggle="modal"
+                      aria-controls="compare"
+                      class="box-icon hover-tooltip compare show-compare"
+                    >
                       <span class="icon icon-compare"></span>
                       <span class="tooltip text-caption-2">Compare</span>
                     </a>
@@ -4178,7 +5343,7 @@ Currently selected pincode :122004
         </div>
       </div>
     </div>
-    <!-- /quickView -->
+    <!-- /.quickView -->
 
     <!-- .compare -->
     <div class="modal fade modal-compare" id="compare">
@@ -4475,7 +5640,51 @@ Currently selected pincode :122004
       </div>
     </div>
     <!-- /size-guide -->
+ <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      if (!slides.length) {
+        console.error("No slides found!");
+        return;
+      }
+
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].style.transform = slideIndex > i + 1 ? "translateX(-100%)" : "translateX(100%)";
+        slides[i].style.opacity = "0";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      if (slides[slideIndex - 1]) {
+        slides[slideIndex - 1].classList.add("active");
+        slides[slideIndex - 1].style.transform = "translateX(0)";
+        slides[slideIndex - 1].style.opacity = "1";
+        dots[slideIndex - 1].className += " active";
+      } else {
+        console.error("Slide at index " + (slideIndex - 1) + " not found!");
+      }
+    }
+  </script>
     <!-- Javascript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
